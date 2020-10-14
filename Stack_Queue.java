@@ -42,6 +42,10 @@ public class Stack_Queue<T> {
 		stack.push(newNode1);
 		stack.push(newNode2);
 		stack.push(newNode3);
+		System.out.println("Original Stack:");
+		stack.printStack();
+		stack.pop();
+		System.out.println("\nModified Stack after Dequeue");
 		stack.printStack();
 	}
 
