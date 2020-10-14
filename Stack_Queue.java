@@ -17,7 +17,7 @@ public class Stack_Queue<T> {
 	}
 
 	public void push(INode<T> newNode) {
-		linkedlist.insert(newNode);
+		linkedlist.append(newNode);
 	}
 	public INode<T> peak(){
 		return linkedlist.head;
@@ -39,11 +39,10 @@ public class Stack_Queue<T> {
 		Node<Integer> newNode1 = new Node<Integer>(56);
 		Node<Integer> newNode2 = new Node<Integer>(30);
 		Node<Integer> newNode3 = new Node<Integer>(70);
-		stack.push(newNode3);
-		stack.push(newNode2);
 		stack.push(newNode1);
+		stack.push(newNode2);
+		stack.push(newNode3);
 		stack.printStack();
-		stack.popTillEmpty();
 	}
 
 }
