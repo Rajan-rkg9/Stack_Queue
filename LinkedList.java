@@ -13,6 +13,9 @@ public class LinkedList<T> {
 	public int size() {
 		return size;
 	}
+	public boolean isEmpty() {
+		return size == 0;
+	}
 	public void insert(INode<T> newNode) {
 		if (this.head == null) {
 			this.head = newNode;
